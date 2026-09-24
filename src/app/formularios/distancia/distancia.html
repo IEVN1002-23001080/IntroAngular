@@ -1,0 +1,81 @@
+<br>
+<div>
+    <h3>DISTANCIA ENTRE DOS PUNTOS</h3>
+</div>
+
+<div>
+    <div class="form-group">
+        <br>
+
+        <label for="num1">X1</label>
+
+        <input
+            [(ngModel)]="num1"
+            name="num1"
+            type="number"
+            id="num1"
+           
+        />
+
+    </div>
+
+    <div class="form-group pt-4">
+
+        <label for="num2">Y1</label>
+
+        <input
+            [(ngModel)]="num2"
+            name="num2"
+            type="number"
+            
+            id="num2"
+            
+        />
+
+    </div>
+
+    <div class="form-group pt-4">
+
+        <label for="num3">X2</label>
+
+        <input
+            [(ngModel)]="num3"
+            name="num3"
+            type="number"
+            
+            id="num3"
+           
+        />
+
+    </div>
+
+    <div class="form-group pt-4">
+
+        <label for="num4">Y2</label>
+
+        <input
+            [(ngModel)]="num4"
+            name="num4"
+            type="number"
+            id="num4"
+            
+        />
+
+        <br>
+    </div>
+
+    <br>
+
+    <button
+        type="button"
+        class="btn btn-primary d-block mb-2"
+        (click)="calcular()">
+        CALCULAR
+    </button>
+
+    <div class="mt-4">
+
+        <h3>RESULTADO: {{ resultado }}</h3>
+
+    </div>
+</div>

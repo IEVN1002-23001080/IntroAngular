@@ -1,0 +1,148 @@
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-6">
+
+            <div class="mb-3">
+
+                <form>
+
+                    <div class="form-group pt-4">
+
+                        <label for="num1">NÚMERO 1</label>
+
+                        <input
+                            [(ngModel)]="num1"
+                            name="num1"
+                            type="number"
+                            class="form-control"
+                            id="num1"
+                            placeholder="INGRESE NÚMERO 1"
+                        />
+
+                    </div>
+
+                    <div class="form-group pt-4">
+
+                        <label for="num2">NÚMERO 2</label>
+
+                        <input
+                            [(ngModel)]="num2"
+                            name="num2"
+                            type="number"
+                            class="form-control"
+                            id="num2"
+                            placeholder="INGRESE NÚMERO 2"
+                        />
+
+                    </div>
+
+                    <br>
+
+                    <!--
+                    BOTONES ANTERIORES
+
+                    <button
+                        type="button"
+                        class="btn btn-primary d-block mb-2"
+                        (click)="sumar()">
+                        SUMAR
+                    </button>
+
+                    <button
+                        type="button"
+                        class="btn btn-primary d-block mb-2"
+                        (click)="restar()">
+                        RESTAR
+                    </button>
+
+                    <button
+                        type="button"
+                        class="btn btn-primary d-block mb-2"
+                        (click)="multiplicar()">
+                        MULTIPLICAR
+                    </button>
+
+                    <button
+                        type="button"
+                        class="btn btn-primary d-block mb-2"
+                        (click)="dividir()">
+                        DIVIDIR
+                    </button>
+                    -->
+
+
+                  
+
+                    <div class="form-group">
+
+                    
+
+                        <br>
+
+                        <input
+                            type="radio"
+                            name="operacion"
+                            value="sumar"
+                            [(ngModel)]="operacion"
+                        />
+                        SUMAR
+
+                        <br>
+
+                        <input
+                            type="radio"
+                            name="operacion"
+                            value="restar"
+                            [(ngModel)]="operacion"
+                        />
+                        RESTAR
+
+                        <br>
+
+                        <input
+                            type="radio"
+                            name="operacion"
+                            value="multiplicar"
+                            [(ngModel)]="operacion"
+                        />
+                        MULTIPLICAR
+
+                        <br>
+
+                        <input
+                            type="radio"
+                            name="operacion"
+                            value="dividir"
+                            [(ngModel)]="operacion"
+                        />
+                        DIVIDIR
+
+                    </div>
+
+                    <br>
+
+                    <button
+                        type="button"
+                        class="btn btn-primary d-block mb-2"
+                        (click)="calcular()">
+                        CALCULAR
+                    </button>
+
+
+                    <div class="mt-4">
+
+                        <h3>RESULTADO: {{ resultado }}</h3>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

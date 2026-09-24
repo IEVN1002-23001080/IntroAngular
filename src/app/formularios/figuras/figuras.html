@@ -1,0 +1,91 @@
+<br>
+<div >
+    <h3>SELECCIONA TU FIGURA</h3>
+
+</div>
+<div>
+    <div class="form-group">
+                        <br>
+
+                        <input
+                            type="radio"
+                            name="operacion"
+                            value="triangulo"
+                            [(ngModel)]="operacion"
+                        />
+                        TRINAGULO
+
+            
+                        <input
+                            type="radio"
+                            name="operacion"
+                            value="rectangulo"
+                            [(ngModel)]="operacion"
+                        />
+                        RECTANGULO
+<br>
+
+                        <input
+                            type="radio"
+                            name="operacion"
+                            value="circulo"
+                            [(ngModel)]="operacion"
+                        />
+                        CIRCULO
+
+                        <input
+                            type="radio"
+                            name="operacion"
+                            value="pentagono"
+                            [(ngModel)]="operacion"
+                        />
+                        PENTAGONO
+
+
+
+
+                    <div class="form-group pt-4">
+
+                        <label for="num1">NÚMERO 1</label>
+
+                        <input
+                            [(ngModel)]="num1"
+                            name="num1"
+                            type="number"
+                            class="form-control"
+                            id="num1"
+                            placeholder="INGRESE NÚMERO 1"
+                        />
+
+                    </div>
+
+                    <div class="form-group pt-4  ">
+
+                        <label for="num2">NÚMERO 2</label>
+
+                        <input
+                            [(ngModel)]="num2"
+                            name="num2"
+                            type="number"
+                            class="form-control"
+                            id="num2"
+                            placeholder="INGRESE NÚMERO 2"
+                        />
+
+                        <BR>
+                    </div>
+                        <button
+                        type="button"
+                        class="btn btn-primary d-block mb-2"
+                        (click)="calcular()">
+                        CALCULAR
+                    </button>
+
+
+                    <div class="mt-4">
+
+                        <h3>RESULTADO: {{ resultado }}</h3>
+
+                    </div>
+    </div>
+</div>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IHeroes } from '../heroes';
 
 @Component({
   selector: 'app-heroes-list',
@@ -8,18 +9,16 @@ import { Component } from '@angular/core';
 })
 export class HeroesList {
 
-  imageWidth:number=40;
-  imageMargin:number=2;
-  muestraImage:boolean=true;
-  listFilter:string='';
+  imageWidth: number = 40;
+  imageMargin: number = 2;
+  muestraImage: boolean = true;
+  listFilter: string = '';
 
-
-  showImage():void{
-this.muestraImage=!this.muestraImage
+  showImage(): void {
+    this.muestraImage = !this.muestraImage;
   }
 
-
-  heroes: any[] = [
+  heroes: IHeroes[] = [
     {
       imagen: "https://dragonball-api.com/characters/goku_normal.webp",
       nombre: "GOKU",
@@ -45,9 +44,9 @@ this.muestraImage=!this.muestraImage
       imagen: "https://dragonball-api.com/characters/bulma.webp",
       nombre: "BULMA",
       descripcion: "PODER LEGENDARIO",
-      race: "HUMAN", // Corregido de "MUGERX" a un término más estándar (o puedes dejar "HUMANA")
+      race: "HUMAN",
       ki: 12000
-    },
-  ]
+    }
+  ];
 
 }
